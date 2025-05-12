@@ -1,0 +1,1214 @@
+versions pytest-8.3.5, python-3.13.3.final.0
+invocation_dir=/Users/davitharoyan/Documents/square_sign_task
+cwd=/Users/davitharoyan/Documents/square_sign_task
+args=('-s', '-v', '--debug')
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x101461d30>
+    pytest_plugin_registered [hook]
+        plugin: <Session  exitstatus='<UNSET>' testsfailed=0 testscollected=0>
+        plugin_name: session
+        manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x101461d30>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x1015f4980>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x102076900>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: faulthandler [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: pdb [assertion]
+    early skip of rewriting module: cmd [assertion]
+    early skip of rewriting module: code [assertion]
+    early skip of rewriting module: codeop [assertion]
+    early skip of rewriting module: rlcompleter [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+          plugin_name: 4314935520
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x101461d30>
+          plugin_name: pytestconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/mark/__init__.py'>
+          plugin_name: mark
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/main.py'>
+          plugin_name: main
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/runner.py'>
+          plugin_name: runner
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/fixtures.py'>
+          plugin_name: fixtures
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/helpconfig.py'>
+          plugin_name: helpconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/python.py'>
+          plugin_name: python
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/terminal.py'>
+          plugin_name: terminal
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/debugging.py'>
+          plugin_name: debugging
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/unittest.py'>
+          plugin_name: unittest
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/capture.py'>
+          plugin_name: capture
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/skipping.py'>
+          plugin_name: skipping
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/legacypath.py'>
+          plugin_name: legacypath
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/tmpdir.py'>
+          plugin_name: tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/monkeypatch.py'>
+          plugin_name: monkeypatch
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/recwarn.py'>
+          plugin_name: recwarn
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/pastebin.py'>
+          plugin_name: pastebin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/assertion/__init__.py'>
+          plugin_name: assertion
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/junitxml.py'>
+          plugin_name: junitxml
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/doctest.py'>
+          plugin_name: doctest
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/cacheprovider.py'>
+          plugin_name: cacheprovider
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/freeze_support.py'>
+          plugin_name: freeze_support
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/setuponly.py'>
+          plugin_name: setuponly
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/setupplan.py'>
+          plugin_name: setupplan
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/stepwise.py'>
+          plugin_name: stepwise
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/warnings.py'>
+          plugin_name: warnings
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/logging.py'>
+          plugin_name: logging
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/reports.py'>
+          plugin_name: reports
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/python_path.py'>
+          plugin_name: python_path
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/unraisableexception.py'>
+          plugin_name: unraisableexception
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/threadexception.py'>
+          plugin_name: threadexception
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/faulthandler.py'>
+          plugin_name: faulthandler
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_playwright.pytest_playwright' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/pytest_playwright/pytest_playwright.py'>
+          plugin_name: playwright
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_base_url.plugin' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/pytest_base_url/plugin.py'>
+          plugin_name: base_url
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='no' _global_capturing=<MultiCapture out=None err=None in_=None _state='suspended' _in_suspended=False> _capture_fixture=None>
+          plugin_name: capturemanager
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'tests.conftest' from '/Users/davitharoyan/Documents/square_sign_task/tests/conftest.py'>
+          plugin_name: /Users/davitharoyan/Documents/square_sign_task/tests/conftest.py
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          plugin_name: session
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x1015f4980>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x102076900>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x102077e00>
+          plugin_name: terminalreporter
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x1024881a0>
+          plugin_name: logging-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+          plugin_name: 4314935520
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x101461d30>
+          plugin_name: pytestconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/mark/__init__.py'>
+          plugin_name: mark
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/main.py'>
+          plugin_name: main
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/runner.py'>
+          plugin_name: runner
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/fixtures.py'>
+          plugin_name: fixtures
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/helpconfig.py'>
+          plugin_name: helpconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/python.py'>
+          plugin_name: python
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/terminal.py'>
+          plugin_name: terminal
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/debugging.py'>
+          plugin_name: debugging
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/unittest.py'>
+          plugin_name: unittest
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/capture.py'>
+          plugin_name: capture
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/skipping.py'>
+          plugin_name: skipping
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/legacypath.py'>
+          plugin_name: legacypath
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/tmpdir.py'>
+          plugin_name: tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/monkeypatch.py'>
+          plugin_name: monkeypatch
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/recwarn.py'>
+          plugin_name: recwarn
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/pastebin.py'>
+          plugin_name: pastebin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/assertion/__init__.py'>
+          plugin_name: assertion
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/junitxml.py'>
+          plugin_name: junitxml
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/doctest.py'>
+          plugin_name: doctest
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/cacheprovider.py'>
+          plugin_name: cacheprovider
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/freeze_support.py'>
+          plugin_name: freeze_support
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/setuponly.py'>
+          plugin_name: setuponly
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/setupplan.py'>
+          plugin_name: setupplan
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/stepwise.py'>
+          plugin_name: stepwise
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/warnings.py'>
+          plugin_name: warnings
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/logging.py'>
+          plugin_name: logging
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/reports.py'>
+          plugin_name: reports
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/python_path.py'>
+          plugin_name: python_path
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/unraisableexception.py'>
+          plugin_name: unraisableexception
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/threadexception.py'>
+          plugin_name: threadexception
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/faulthandler.py'>
+          plugin_name: faulthandler
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_playwright.pytest_playwright' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/pytest_playwright/pytest_playwright.py'>
+          plugin_name: playwright
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_base_url.plugin' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/pytest_base_url/plugin.py'>
+          plugin_name: base_url
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='no' _global_capturing=<MultiCapture out=None err=None in_=None _state='suspended' _in_suspended=False> _capture_fixture=None>
+          plugin_name: capturemanager
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'tests.conftest' from '/Users/davitharoyan/Documents/square_sign_task/tests/conftest.py'>
+          plugin_name: /Users/davitharoyan/Documents/square_sign_task/tests/conftest.py
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          plugin_name: session
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x1015f4980>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x102076900>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x102077e00>
+          plugin_name: terminalreporter
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x1024881a0>
+          plugin_name: logging-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x102488ad0>
+          plugin_name: funcmanage
+          manager: <_pytest.config.PytestPluginManager object at 0x10130b0e0>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x101461d30>
+          start_path: /Users/davitharoyan/Documents/square_sign_task
+          startdir: /Users/davitharoyan/Documents/square_sign_task
+      early skip of rewriting module: importlib.metadata._adapters [assertion]
+      early skip of rewriting module: email.message [assertion]
+      early skip of rewriting module: quopri [assertion]
+      early skip of rewriting module: email.utils [assertion]
+      early skip of rewriting module: email._parseaddr [assertion]
+      early skip of rewriting module: email.errors [assertion]
+      early skip of rewriting module: email._policybase [assertion]
+      early skip of rewriting module: email.header [assertion]
+      early skip of rewriting module: email.quoprimime [assertion]
+      early skip of rewriting module: email.base64mime [assertion]
+      early skip of rewriting module: email.charset [assertion]
+      early skip of rewriting module: email.encoders [assertion]
+      early skip of rewriting module: email._encoded_words [assertion]
+      early skip of rewriting module: email.iterators [assertion]
+      early skip of rewriting module: importlib.metadata._text [assertion]
+      early skip of rewriting module: email.parser [assertion]
+      early skip of rewriting module: email.feedparser [assertion]
+      finish pytest_report_header --> [['rootdir: /Users/davitharoyan/Documents/square_sign_task', 'configfile: pytest.ini', 'plugins: playwright-0.7.0, base-url-2.1.0'], 'cachedir: .pytest_cache', ['using: pytest-8.3.5', 'registered third-party plugins:', '  pytest-playwright-0.7.0 at /Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/pytest_playwright/pytest_playwright.py', '  pytest-base-url-2.1.0 at /Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/pytest_base_url/plugin.py']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    perform_collect <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0> ['/Users/davitharoyan/Documents/square_sign_task'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        processing argument CollectionArgument(path=PosixPath('/Users/davitharoyan/Documents/square_sign_task'), parts=[], module_name=None) [collection]
+            pytest_collect_directory [hook]
+                path: /Users/davitharoyan/Documents/square_sign_task
+                parent: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+            finish pytest_collect_directory --> <Dir square_sign_task> [hook]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=1 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=1 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+    genitems <Dir square_sign_task> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir square_sign_task>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir square_sign_task>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/.env
+            path: /Users/davitharoyan/Documents/square_sign_task/.env
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir square_sign_task>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/.env
+            path: /Users/davitharoyan/Documents/square_sign_task/.env
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/.pytest_cache
+            path: /Users/davitharoyan/Documents/square_sign_task/.pytest_cache
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/pages
+            path: /Users/davitharoyan/Documents/square_sign_task/pages
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/pages
+            parent: <Dir square_sign_task>
+        finish pytest_collect_directory --> <Package pages> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/pytest.ini
+            path: /Users/davitharoyan/Documents/square_sign_task/pytest.ini
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir square_sign_task>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/pytest.ini
+            path: /Users/davitharoyan/Documents/square_sign_task/pytest.ini
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/pytestdebug.log
+            path: /Users/davitharoyan/Documents/square_sign_task/pytestdebug.log
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir square_sign_task>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/pytestdebug.log
+            path: /Users/davitharoyan/Documents/square_sign_task/pytestdebug.log
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/test_data
+            path: /Users/davitharoyan/Documents/square_sign_task/test_data
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/test_data
+            parent: <Dir square_sign_task>
+        finish pytest_collect_directory --> <Package test_data> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests
+            path: /Users/davitharoyan/Documents/square_sign_task/tests
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/tests
+            parent: <Dir square_sign_task>
+        finish pytest_collect_directory --> <Package tests> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/venv
+            path: /Users/davitharoyan/Documents/square_sign_task/venv
+        finish pytest_ignore_collect --> True [hook]
+      finish pytest_make_collect_report --> <CollectReport '.' lenresult=3 outcome='passed'> [hook]
+    genitems <Package pages> [collection]
+      pytest_collectstart [hook]
+          collector: <Package pages>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package pages>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/pages/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/pages/__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package pages>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/pages/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/pages/__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/pages/__pycache__
+            path: /Users/davitharoyan/Documents/square_sign_task/pages/__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/pages/base_page.py
+            path: /Users/davitharoyan/Documents/square_sign_task/pages/base_page.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package pages>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/pages/base_page.py
+            path: /Users/davitharoyan/Documents/square_sign_task/pages/base_page.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/pages/retractable_banners.py
+            path: /Users/davitharoyan/Documents/square_sign_task/pages/retractable_banners.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package pages>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/pages/retractable_banners.py
+            path: /Users/davitharoyan/Documents/square_sign_task/pages/retractable_banners.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'pages' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'pages' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Package test_data> [collection]
+      pytest_collectstart [hook]
+          collector: <Package test_data>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package test_data>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/test_data/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/test_data/__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package test_data>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/test_data/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/test_data/__init__.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'test_data' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'test_data' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Package tests> [collection]
+      pytest_collectstart [hook]
+          collector: <Package tests>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package tests>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package tests>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/__pycache__
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/conftest.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/conftest.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package tests>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/conftest.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/conftest.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners
+            parent: <Package tests>
+        finish pytest_collect_directory --> <Package retractable_banners> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests' lenresult=1 outcome='passed'> [hook]
+    genitems <Package retractable_banners> [collection]
+      pytest_collectstart [hook]
+          collector: <Package retractable_banners>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package retractable_banners>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package retractable_banners>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/__pycache__
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration
+            parent: <Package retractable_banners>
+        finish pytest_collect_directory --> <Package configuration> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing
+            parent: <Package retractable_banners>
+        finish pytest_collect_directory --> <Package pricing> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils
+            parent: <Package retractable_banners>
+        finish pytest_collect_directory --> <Package utils> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners' lenresult=3 outcome='passed'> [hook]
+    genitems <Package configuration> [collection]
+      pytest_collectstart [hook]
+          collector: <Package configuration>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package configuration>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package configuration>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/__pycache__
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/pytestdebug.log
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/pytestdebug.log
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package configuration>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/pytestdebug.log
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/pytestdebug.log
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package configuration>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py
+          pytest_pycollect_makemodule [hook]
+              parent: <Package configuration>
+              module_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py
+              path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py
+          finish pytest_pycollect_makemodule --> <Module test_unit_swich.py> [hook]
+        finish pytest_collect_file --> [<Module test_unit_swich.py>] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package configuration>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py
+          pytest_pycollect_makemodule [hook]
+              parent: <Package configuration>
+              module_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py
+              path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py
+          finish pytest_pycollect_makemodule --> <Module test_warning_modal_functionality.py> [hook]
+        finish pytest_collect_file --> [<Module test_warning_modal_functionality.py>] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests
+            parent: <Package configuration>
+        finish pytest_collect_directory --> <Dir tests> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/configuration' lenresult=3 outcome='passed'> [hook]
+    genitems <Module test_unit_swich.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_unit_swich.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_unit_swich.py>
+      early skip of rewriting module: tests.retractable_banners [assertion]
+      early skip of rewriting module: tests.retractable_banners.configuration [assertion]
+      find_module called for: tests.retractable_banners.configuration.test_unit_swich [assertion]
+      matched test file '/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py' [assertion]
+      _read_pyc(/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py): out of date [assertion]
+      rewriting PosixPath('/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_unit_swich.py') [assertion]
+      early skip of rewriting module: pages [assertion]
+      early skip of rewriting module: pages.retractable_banners [assertion]
+      early skip of rewriting module: pages.base_page [assertion]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_unit_swich.py>
+            name: @py_builtins
+            obj: <module 'builtins' (built-in)>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_unit_swich.py>
+            name: @pytest_ar
+            obj: <module '_pytest.assertion.rewrite' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/assertion/rewrite.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_unit_swich.py>
+            name: time
+            obj: <module 'time' (built-in)>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_unit_swich.py>
+            name: RetractableBanners
+            obj: <class 'pages.retractable_banners.RetractableBanners'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_unit_swich.py>
+            name: test_unit
+            obj: <function test_unit at 0x1024fa0c0>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x10248b380>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function test_unit>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/configuration/test_unit_swich.py' lenresult=1 outcome='passed'> [hook]
+    genitems <Function test_unit> [collection]
+      pytest_itemcollected [hook]
+          item: <Function test_unit>
+      finish pytest_itemcollected --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/configuration/test_unit_swich.py' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Module test_warning_modal_functionality.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_warning_modal_functionality.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_warning_modal_functionality.py>
+      find_module called for: tests.retractable_banners.configuration.test_warning_modal_functionality [assertion]
+      matched test file '/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py' [assertion]
+      _read_pyc(/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py): out of date [assertion]
+      rewriting PosixPath('/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/test_warning_modal_functionality.py') [assertion]
+      early skip of rewriting module: tests.retractable_Banners [assertion]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/configuration/test_warning_modal_functionality.py' lenresult=0 outcome='failed'> [hook]
+      pytest_exception_interact [hook]
+          node: <Module test_warning_modal_functionality.py>
+          call: <CallInfo when='collect' excinfo=<ExceptionInfo CollectError("ImportError while importing test module '/Users/davitharoyan/Documents/square_sign_task/tests/retractabl..._Banners.utils.priceUtils import get_base_price\nE   ModuleNotFoundError: No module named 'tests.retractable_Banners'") tblen=7>>
+          report: <CollectReport 'tests/retractable_banners/configuration/test_warning_modal_functionality.py' lenresult=0 outcome='failed'>
+      finish pytest_exception_interact --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/configuration/test_warning_modal_functionality.py' lenresult=0 outcome='failed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir tests> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir tests>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir tests>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners
+            parent: <Dir tests>
+        finish pytest_collect_directory --> <Dir retractable_banners> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/configuration/tests' lenresult=1 outcome='passed'> [hook]
+    genitems <Dir retractable_banners> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir retractable_banners>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir retractable_banners>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners/utils
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners/utils
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners/utils
+            parent: <Dir retractable_banners>
+        finish pytest_collect_directory --> <Dir utils> [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/configuration/tests/retractable_banners' lenresult=1 outcome='passed'> [hook]
+    genitems <Dir utils> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir utils>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir utils>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners/utils/getDetailsFixture.json
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners/utils/getDetailsFixture.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir utils>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners/utils/getDetailsFixture.json
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/configuration/tests/retractable_banners/utils/getDetailsFixture.json
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/configuration/tests/retractable_banners/utils' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/configuration/tests/retractable_banners/utils' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/configuration/tests/retractable_banners' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/configuration/tests' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/configuration' lenresult=3 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Package pricing> [collection]
+      pytest_collectstart [hook]
+          collector: <Package pricing>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package pricing>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package pricing>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/__pycache__
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package pricing>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py
+          pytest_pycollect_makemodule [hook]
+              parent: <Package pricing>
+              module_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py
+              path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py
+          finish pytest_pycollect_makemodule --> <Module test_base_price.py> [hook]
+        finish pytest_collect_file --> [<Module test_base_price.py>] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package pricing>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py
+          pytest_pycollect_makemodule [hook]
+              parent: <Package pricing>
+              module_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py
+              path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py
+          finish pytest_pycollect_makemodule --> <Module test_discounted_price.py> [hook]
+        finish pytest_collect_file --> [<Module test_discounted_price.py>] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package pricing>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py
+          pytest_pycollect_makemodule [hook]
+              parent: <Package pricing>
+              module_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py
+              path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py
+          finish pytest_pycollect_makemodule --> <Module test_total_price.py> [hook]
+        finish pytest_collect_file --> [<Module test_total_price.py>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/pricing' lenresult=3 outcome='passed'> [hook]
+    genitems <Module test_base_price.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_base_price.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_base_price.py>
+      early skip of rewriting module: tests.retractable_banners.pricing [assertion]
+      find_module called for: tests.retractable_banners.pricing.test_base_price [assertion]
+      matched test file '/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py' [assertion]
+      _read_pyc(/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py): out of date [assertion]
+      rewriting PosixPath('/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_base_price.py') [assertion]
+      early skip of rewriting module: tests.retractable_banners.utils [assertion]
+      early skip of rewriting module: tests.retractable_banners.utils.get_base_price [assertion]
+      early skip of rewriting module: _suggestions [assertion]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/pricing/test_base_price.py' lenresult=0 outcome='failed'> [hook]
+      pytest_exception_interact [hook]
+          node: <Module test_base_price.py>
+          call: <CallInfo when='collect' excinfo=<ExceptionInfo CollectError("ImportError while importing test module '/Users/davitharoyan/Documents/square_sign_task/tests/retractabl...tractable_banners.utils' (/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/__init__.py)") tblen=7>>
+          report: <CollectReport 'tests/retractable_banners/pricing/test_base_price.py' lenresult=0 outcome='failed'>
+      finish pytest_exception_interact --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/pricing/test_base_price.py' lenresult=0 outcome='failed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Module test_discounted_price.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_discounted_price.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_discounted_price.py>
+      find_module called for: tests.retractable_banners.pricing.test_discounted_price [assertion]
+      matched test file '/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py' [assertion]
+      _read_pyc(/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py): out of date [assertion]
+      rewriting PosixPath('/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_discounted_price.py') [assertion]
+      early skip of rewriting module: tests.retractable_banners.utils.get_base_price [assertion]
+      early skip of rewriting module: tests.retractable_banners.utils.get_roll_up_options [assertion]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/pricing/test_discounted_price.py' lenresult=0 outcome='failed'> [hook]
+      pytest_exception_interact [hook]
+          node: <Module test_discounted_price.py>
+          call: <CallInfo when='collect' excinfo=<ExceptionInfo CollectError("ImportError while importing test module '/Users/davitharoyan/Documents/square_sign_task/tests/retractabl...tractable_banners.utils' (/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/__init__.py)") tblen=7>>
+          report: <CollectReport 'tests/retractable_banners/pricing/test_discounted_price.py' lenresult=0 outcome='failed'>
+      finish pytest_exception_interact --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/pricing/test_discounted_price.py' lenresult=0 outcome='failed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Module test_total_price.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_total_price.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_total_price.py>
+      find_module called for: tests.retractable_banners.pricing.test_total_price [assertion]
+      matched test file '/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py' [assertion]
+      _read_pyc(/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py): out of date [assertion]
+      rewriting PosixPath('/Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/pricing/test_total_price.py') [assertion]
+      early skip of rewriting module: tests.retractable_banners.utils.priceUtils [assertion]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_total_price.py>
+            name: @py_builtins
+            obj: <module 'builtins' (built-in)>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_total_price.py>
+            name: @pytest_ar
+            obj: <module '_pytest.assertion.rewrite' from '/Users/davitharoyan/Documents/square_sign_task/venv/lib/python3.13/site-packages/_pytest/assertion/rewrite.py'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_total_price.py>
+            name: RetractableBanners
+            obj: <class 'pages.retractable_banners.RetractableBanners'>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_total_price.py>
+            name: get_base_price
+            obj: <function get_base_price at 0x102538ea0>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_total_price.py>
+            name: get_roll_up_options
+            obj: <function get_roll_up_options at 0x102538fe0>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_total_price.py>
+            name: calculate_total
+            obj: <function calculate_total at 0x102538d60>
+        finish pytest_pycollect_makeitem --> None [hook]
+        pytest_pycollect_makeitem [hook]
+            collector: <Module test_total_price.py>
+            name: test_total_price
+            obj: <function test_total_price at 0x102538860>
+          pytest_generate_tests [hook]
+              metafunc: <_pytest.python.Metafunc object at 0x1024e60d0>
+          finish pytest_generate_tests --> [] [hook]
+        finish pytest_pycollect_makeitem --> [<Function test_total_price>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/pricing/test_total_price.py' lenresult=1 outcome='passed'> [hook]
+    genitems <Function test_total_price> [collection]
+      pytest_itemcollected [hook]
+          item: <Function test_total_price>
+      finish pytest_itemcollected --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/pricing/test_total_price.py' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/pricing' lenresult=3 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Package utils> [collection]
+      pytest_collectstart [hook]
+          collector: <Package utils>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Package utils>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/__init__.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package utils>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/__init__.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/__init__.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/__pycache__
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/getDetailsFixture.json
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/getDetailsFixture.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package utils>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/getDetailsFixture.json
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/getDetailsFixture.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            collection_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/priceUtils.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/priceUtils.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Package utils>
+            file_path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/priceUtils.py
+            path: /Users/davitharoyan/Documents/square_sign_task/tests/retractable_banners/utils/priceUtils.py
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests/retractable_banners/utils' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners/utils' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/retractable_banners' lenresult=3 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport '.' lenresult=3 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collection_modifyitems [hook]
+          session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=3 testscollected=0>
+          config: <_pytest.config.Config object at 0x101461d30>
+          items: [<Function test_unit>, <Function test_total_price>]
+      finish pytest_collection_modifyitems --> [] [hook]
+      pytest_collection_finish [hook]
+          session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=3 testscollected=0>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x101461d30>
+            items: [<Function test_unit>, <Function test_total_price>]
+            start_path: /Users/davitharoyan/Documents/square_sign_task
+            startdir: /Users/davitharoyan/Documents/square_sign_task
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    finish pytest_collection --> None [hook]
+    pytest_runtestloop [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=3 testscollected=2>
+    pytest_keyboard_interrupt [hook]
+        excinfo: <ExceptionInfo Interrupted('3 errors during collection') tblen=15>
+    finish pytest_keyboard_interrupt --> [] [hook]
+    pytest_sessionfinish [hook]
+        session: <Session  exitstatus=<ExitCode.INTERRUPTED: 2> testsfailed=3 testscollected=2>
+        exitstatus: 2
+      pytest_terminal_summary [hook]
+          terminalreporter: <_pytest.terminal.TerminalReporter object at 0x102077e00>
+          exitstatus: 2
+          config: <_pytest.config.Config object at 0x101461d30>
+        pytest_report_teststatus [hook]
+            report: <CollectReport 'tests/retractable_banners/configuration/test_warning_modal_functionality.py' lenresult=0 outcome='failed'>
+            config: <_pytest.config.Config object at 0x101461d30>
+        finish pytest_report_teststatus --> ('error', 'E', 'ERROR') [hook]
+        pytest_report_teststatus [hook]
+            report: <CollectReport 'tests/retractable_banners/pricing/test_base_price.py' lenresult=0 outcome='failed'>
+            config: <_pytest.config.Config object at 0x101461d30>
+        finish pytest_report_teststatus --> ('error', 'E', 'ERROR') [hook]
+        pytest_report_teststatus [hook]
+            report: <CollectReport 'tests/retractable_banners/pricing/test_discounted_price.py' lenresult=0 outcome='failed'>
+            config: <_pytest.config.Config object at 0x101461d30>
+        finish pytest_report_teststatus --> ('error', 'E', 'ERROR') [hook]
+      finish pytest_terminal_summary --> [] [hook]
+    finish pytest_sessionfinish --> [] [hook]
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x101461d30>
+    finish pytest_unconfigure --> [] [hook]
