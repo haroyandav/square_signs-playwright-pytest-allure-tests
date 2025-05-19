@@ -99,4 +99,3 @@ chmod +x run_tests.sh
 ├── run_tests.sh                  # Shell script to run tests and open report
 ├── requirements.txt              # Python dependencies
 └── README.md                     # You're here 📘
-
