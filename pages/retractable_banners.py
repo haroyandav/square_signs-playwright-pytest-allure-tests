@@ -14,15 +14,15 @@ class RetractableBanners(BasePage):
         self.unit_feet = page.locator('[data-testid="measurement-feet"]')
 
         # Size & pricing elements
-        self.size_field_text = page.locator('.sc-gdyfxU .css-1dimb5e-singleValue')
-        self.size_field = page.locator('.sc-gdyfxU .sc-ktPOXr')
-        self.size_field_values_text = page.locator('[role="listbox"] .sc-eulNPF')
-        self.price_section = page.locator('[data-testid="priceSection"]')
-        self.roll_up_stand_field = page.locator('.css-1dimb5e-singleValue').nth(2)
+        self.size_field_text = page.locator('div.css-1dimb5e-singleValue').first
+        self.size_field = page.locator('div.css-1dimb5e-singleValue').first
+        self.size_field_values_text = page.locator('[role="option"] .sc-dWZrec')
+        self.price_section = page.locator('[data-testid="priceSection"]').nth(1)
+        self.roll_up_stand_field = page.locator('div.css-1dimb5e-singleValue').nth(2)
 
         # Dropdowns
         self.dropdown_input = page.locator('.icon-arrow-down').nth(4)
-        self.selected_option = page.locator('[id^="react-select-4"] .css-1dimb5e-singleValue')
+        self.selected_option = page.locator('[class="sc-aYaIB eDvmrn  icon icon-check"]').first
 
         # Modal
         self.warning_modal_heading = page.locator('.warningPopupHeading')
@@ -30,7 +30,7 @@ class RetractableBanners(BasePage):
         self.warning_modal_cancel_button = page.get_by_role('button', name='Cancel')
 
         # Tooltip section
-        self.buy_more_save_more = page.locator('[data-test-id="buy_more_save_more_product"]')
+        self.buy_more_save_more = page.locator('[data-test-id="buy_more_save_more_product"]').first
 
     # Unit selection
     def select_inch(self):
@@ -51,7 +51,7 @@ class RetractableBanners(BasePage):
 
     # Buy More Save More
     def click_buy_more_save_more(self):
-        self.page.get_by_text("Quantity", exact=True).scroll_into_view_if_needed()
+        self.page.get_by_text("Quantity", exact=True).first.scroll_into_view_if_needed()
         self.click(self.buy_more_save_more)
 
     def hover_buy_more_tooltip(self):

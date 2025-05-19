@@ -6,7 +6,7 @@ from pages.retractable_banners import RetractableBanners
 from tests.retractable_banners.utils.priceUtils import get_base_price, get_roll_up_options
 
 def load_backend_discounts():
-    """Load and return sorted list of backend discounts with count and percent."""
+    """Load and return sorted list of backend discounts with count and percent"""
     path = Path("tests/retractable_banners/utils/getDetailsFixture.json")
     with open(path) as f:
         data = json.load(f)
@@ -28,7 +28,7 @@ def test_total_price_discount_calculation(page):
     banner.click_buy_more_save_more()
     page.wait_for_timeout(2000)
 
-    quantity_buttons = page.locator('[class="sc-dJjagV lbcOSi"]')
+    quantity_buttons = page.locator('[class="sc-cVzzKN idZxvi"]')
     ui_row_count = quantity_buttons.count()
 
     assert ui_row_count == len(backend_discounts), \
@@ -42,7 +42,7 @@ def test_total_price_discount_calculation(page):
         ui_quantity = int(button.locator("span").first.inner_text().split()[0])
         ui_discount = int(button.locator("span").nth(3).inner_text().replace("% off", "").strip())
 
-        # UI total value (e.g., "$2121.2")
+        # UI total value
         ui_total_text = button.locator("span").nth(2).inner_text()
         match = re.search(r'\d+(\.\d{1,2})?', ui_total_text)
         ui_total = float(match.group()) if match else None
