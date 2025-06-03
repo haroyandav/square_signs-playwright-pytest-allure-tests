@@ -22,4 +22,3 @@ def test_tab_navigation_displays_correct_heading(page, data):
     # Step 2: Verify that the expected heading is visible after clicking the tab
     heading = page.get_by_role("heading", name=expected_heading, exact=True)
     expect(heading).to_be_visible(timeout=5000)
-

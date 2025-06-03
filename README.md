@@ -74,7 +74,6 @@ chmod +x run_tests.sh
 
  # Project Structure
 
- .
 ├── tests/
 │   └── retractable_banners/
 │       ├── configuration/
@@ -98,4 +97,4 @@ chmod +x run_tests.sh
 ├── utils/                        # Global helper functions or fixtures
 ├── run_tests.sh                  # Shell script to run tests and open report
 ├── requirements.txt              # Python dependencies
-└── README.md                     # You're here 📘
+└── README.md                     # You're here
