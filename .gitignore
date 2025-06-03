@@ -2,3 +2,5 @@ allure-results/
 allure-report/
 __pycache__/
 **/__pycache__/
+*.log
+pytestdebug.log
