@@ -2,7 +2,6 @@ from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
 import re
 import random
-import time
 
 class RetractableBanners(BasePage):
     def __init__(self, page: Page):

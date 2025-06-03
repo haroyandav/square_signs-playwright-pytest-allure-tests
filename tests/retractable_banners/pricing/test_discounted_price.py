@@ -28,7 +28,7 @@ def test_total_price_discount_calculation(page):
     banner.click_buy_more_save_more()
     page.wait_for_timeout(2000)
 
-    quantity_buttons = page.locator('[class="sc-cVzzKN idZxvi"]')
+    quantity_buttons = page.locator('[class="sc-lnPyOc bZNmoO"] > button')
     ui_row_count = quantity_buttons.count()
 
     assert ui_row_count == len(backend_discounts), \

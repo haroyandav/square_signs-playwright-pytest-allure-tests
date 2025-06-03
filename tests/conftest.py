@@ -1,5 +1,4 @@
 # tests/conftest.py
-
 import json
 import time
 import pytest
@@ -40,11 +39,7 @@ def fetch_api_data_with_retries(url, payload, max_retries=MAX_RETRIES, delay=RET
 
 @pytest.fixture(scope="session", autouse=True)
 def prepare_api_fixture_once():
-    """
-    Run once per session:
-    - Fetch product details via backend API
-    - Store the response in a local JSON file as a fixture
-    """
+    
     data = fetch_api_data_with_retries(API_URL, PRODUCT_PAYLOAD)
 
     FIXTURE_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -60,14 +55,9 @@ def prepare_api_fixture_once():
 
 @pytest.fixture(scope="function")
 def page():
-    """
-    Create a fresh browser context before each test:
-    - Launch Chromium in headless mode
-    - Navigate to the product page
-    - Close the browser after test execution
-    """
+    
     with sync_playwright() as p:
-        browser: Browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=False)
         context = browser.new_context()
         page: Page = context.new_page()
         page.goto(BASE_URL)
