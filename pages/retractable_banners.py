@@ -20,7 +20,7 @@ class RetractableBanners(BasePage):
         self.roll_up_stand_field = page.locator('div.css-1dimb5e-singleValue').nth(2)
 
         # Dropdowns
-        self.dropdown_input = page.locator('.icon-arrow-down').nth(4)
+        self.dropdown_input = page.locator('[class="sc-bkENKe fqepv"] [id="react-select-3-placeholder"]')
         self.selected_option = page.locator('[class="sc-aYaIB eDvmrn  icon icon-check"]').first
 
         # Modal
