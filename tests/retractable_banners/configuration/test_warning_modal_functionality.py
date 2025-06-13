@@ -6,8 +6,8 @@ def test_rollup_matches_selected_size(page):
     banner = RetractableBanners(page)
 
     # Step 1: Get the current selected size and roll-up values
-    size_text = banner.get_size_field_text()         
-    rollup_text = banner.get_roll_up_stand_text()    
+    size_text = banner.get_size_field_text()
+    rollup_text = banner.get_roll_up_stand_text()
 
     # Step 2: Extract numeric parts to compare (ignore units and symbols)
     size_digits = ''.join(filter(str.isdigit, size_text))

@@ -2,6 +2,7 @@ from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
 import re
 import random
+import time
 
 class RetractableBanners(BasePage):
     def __init__(self, page: Page):
@@ -13,15 +14,17 @@ class RetractableBanners(BasePage):
         self.unit_feet = page.locator('[data-testid="measurement-feet"]')
 
         # Size & pricing elements
-        self.size_field_text = page.locator('div.css-1dimb5e-singleValue').first
-        self.size_field = page.locator('div.css-1dimb5e-singleValue').first
-        self.size_field_values_text = page.locator('[role="option"] .sc-dWZrec')
-        self.price_section = page.locator('[data-testid="priceSection"]').nth(1)
-        self.roll_up_stand_field = page.locator('div.css-1dimb5e-singleValue').nth(2)
+        self.size_field_text = page.locator('.css-1dimb5e-singleValue').nth(0)
+        self.size_field = page.locator("//input[@id='react-select-2-input']/ancestor::div[contains(@class, 'sc-bkENKe')]")
+        self.size_field_values_text = page.locator('[role="option"] .sc-dhFVuh')
+        self.price_section = page.locator('[data-testid="priceSection"]').nth(0)
+        self.roll_up_stand_text = page.locator("(//div[contains(@class, 'css-1dimb5e-singleValue')])[2]")
+        self.roll_up_stand_field = page.locator("(//div[contains(@class, 'css-1dimb5e-singleValue')])[2]")
+        self.roll_up_stand_field_not_dropdown= page.locator('button .sc-eIceNc span').nth(2)
 
         # Dropdowns
-        self.dropdown_input = page.locator('[class="sc-bkENKe fqepv"] [id="react-select-3-placeholder"]')
-        self.selected_option = page.locator('[class="sc-aYaIB eDvmrn  icon icon-check"]').first
+        self.dropdown_input = page.locator("(//i[contains(@class, 'icon-arrow-down')])[4]")
+        self.selected_option = page.locator("(//div[@role='option'][.//i[contains(@class, 'icon-check')]])[1]")
 
         # Modal
         self.warning_modal_heading = page.locator('.warningPopupHeading')
@@ -29,34 +32,37 @@ class RetractableBanners(BasePage):
         self.warning_modal_cancel_button = page.get_by_role('button', name='Cancel')
 
         # Tooltip section
-        self.buy_more_save_more = page.locator('[data-test-id="buy_more_save_more_product"]').first
+        self.buy_more_save_more = page.locator('[data-test-id="buy_more_save_more_product"]').nth(0)
 
-    # Unit selection
+        #Button
+        self.design_online = page.locator('[data-testid="go-to-designer-product-form"]')
+
+        # Unit selection
     def select_inch(self):
         self.click(self.unit_inch)
 
     def select_feet(self):
         self.click(self.unit_feet)
 
-    def is_inch_selected(self):
+    def is_inch_selected(self) -> bool:
         return self.is_radio_selected(self.unit_inch)
 
-    def is_feet_selected(self):
+    def is_feet_selected(self) -> bool:
         return self.is_radio_selected(self.unit_feet)
 
-    # Modal confirmation
+        # Modal confirmation
     def confirm_notice_modal(self) :
         self.click(self.warning_modal_confirm_button)
 
-    # Buy More Save More
+        # Buy More Save More
     def click_buy_more_save_more(self):
-        self.page.get_by_text("Quantity", exact=True).first.scroll_into_view_if_needed()
+        self.design_online.scroll_into_view_if_needed()
         self.click(self.buy_more_save_more)
 
     def hover_buy_more_tooltip(self):
         self.hover(self.buy_more_save_more)
 
-    # Size field
+    # Size field and roll-up actions
     def click_size_field(self):
         self.click(self.size_field)
 
@@ -66,6 +72,9 @@ class RetractableBanners(BasePage):
     def get_roll_up_stand_text(self) -> str:
         return self.get_text(self.roll_up_stand_field)
 
+    def get_one_value_option_roll_up_stand_text(self) -> str:
+        return self.get_text(self.roll_up_stand_field_not_dropdown)
+
     def get_all_size_options(self) -> list[str]:
         return self.get_all_texts(self.size_field_values_text)
 
@@ -73,7 +82,6 @@ class RetractableBanners(BasePage):
     def open_dropdown(self):
         self.page.evaluate("window.scrollBy(0, 350)")
         self.click(self.dropdown_input)
-
     # Wait for at least one visible dropdown option reliably
         options = self.page.locator('[role="option"]')
         expect(options.first).to_be_visible(timeout=10000)

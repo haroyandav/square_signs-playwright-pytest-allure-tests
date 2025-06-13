@@ -18,7 +18,7 @@ class BasePage:
     # Get text content from an element after it becomes visible
     def get_text(self, locator: Locator, timeout: int = 10000) -> str:
         locator.wait_for(state="visible", timeout=timeout)
-        return locator.inner_text()
+        return locator.text_content().strip()
 
     # Get all inner texts from matched elements
     def get_all_texts(self, locator: Locator) -> list[str]:
