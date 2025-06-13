@@ -38,10 +38,10 @@ class RetractableBanners(BasePage):
     def select_feet(self):
         self.click(self.unit_feet)
 
-    def is_inch_selected(self) -> bool:
+    def is_inch_selected(self):
         return self.is_radio_selected(self.unit_inch)
 
-    def is_feet_selected(self) -> bool:
+    def is_feet_selected(self):
         return self.is_radio_selected(self.unit_feet)
 
     # Modal confirmation
