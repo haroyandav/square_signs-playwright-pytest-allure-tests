@@ -30,7 +30,7 @@ def test_rollup_matches_selected_size(page):
     page.wait_for_timeout(1000)  
     # Step 7: Get the updated size and roll-up text
     updated_size_digits = ''.join(filter(str.isdigit, banner.get_size_field_text()))
-    updated_rollup_digits = ''.join(filter(str.isdigit, banner.get_roll_up_stand_text()))
+    updated_rollup_digits = ''.join(filter(str.isdigit, banner.get_roll_up_stand_button_text()))
 
     # Step 8: Assert that the updated roll-up matches the newly selected size
     assert new_size_digits == updated_size_digits, (
