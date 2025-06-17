@@ -16,11 +16,13 @@ class RetractableBanners(BasePage):
         # Size & pricing elements
         self.size_field_text = page.locator('.css-1dimb5e-singleValue').nth(0)
         self.size_field = page.locator("//input[@id='react-select-2-input']/ancestor::div[contains(@class, 'sc-bkENKe')]")
+        # self.size_field = page.locator('[class="sc-lbJdeI gXCpft"] [class="sc-hYmYN fdOMpA"]').nth(0) for stage
         self.size_field_values_text = page.locator('[role="option"] .sc-dhFVuh')
         self.price_section = page.locator('[data-testid="priceSection"]').nth(0)
-        self.roll_up_stand_text = page.locator("(//div[contains(@class, 'css-1dimb5e-singleValue')])[2]")
-        self.roll_up_stand_field = page.locator("(//div[contains(@class, 'css-1dimb5e-singleValue')])[2]")
-        self.roll_up_stand_field_not_dropdown= page.locator('button .sc-eIceNc span').nth(2)
+        self.roll_up_stand_text = page.locator('.css-1dimb5e-singleValue').nth(1)
+        self.roll_up_stand_field = page.locator('button[role="button"]').nth(1).locator('span span')
+        self.roll_up_stand_field_not_dropdown= page.locator('button[role="button"] span span').nth(2)
+        self.roll_up_stand_field_text = page.locator('.css-b62m3t-container .css-1dimb5e-singleValue')
 
         # Dropdowns
         self.dropdown_input = page.locator("(//i[contains(@class, 'icon-arrow-down')])[4]")
@@ -70,7 +72,10 @@ class RetractableBanners(BasePage):
         return self.get_text(self.size_field_text)
 
     def get_roll_up_stand_text(self) -> str:
-        return self.get_text(self.roll_up_stand_field)
+        return self.get_text(self.roll_up_stand_text)
+    
+    def get_roll_up_stand_button_text(self) -> str:
+        return self.get_text(self.roll_up_stand_field_not_dropdown)
 
     def get_one_value_option_roll_up_stand_text(self) -> str:
         return self.get_text(self.roll_up_stand_field_not_dropdown)
