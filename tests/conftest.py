@@ -53,14 +53,19 @@ def prepare_api_fixture_once():
         f.write("{}")
 
 
-@pytest.fixture(scope="function")
-def page():
-    
+# Parametrize to run with chromium, firefox, and webkit
+@pytest.fixture(params=["chromium", "firefox", "webkit"], scope="function")
+def page(request):
+    browser_type = request.param
     with sync_playwright() as p:
-        browser = p.firefox.launch(headless=False)
-        context = browser.new_context()
+        browser_launcher = getattr(p, browser_type)
+        browser = browser_launcher.launch(headless=False)
+        context = browser.new_context(
+            viewport={"width": 1240, "height": 900},
+            screen={"width": 1240, "height": 900}
+        )
         page: Page = context.new_page()
         page.goto(BASE_URL)
-        page.wait_for_timeout(6000)
+        page.wait_for_timeout(3000)
         yield page
         browser.close()

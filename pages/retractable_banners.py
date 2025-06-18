@@ -85,14 +85,18 @@ class RetractableBanners(BasePage):
 
     # Dropdown actions
     def open_dropdown(self):
-        self.page.evaluate("window.scrollBy(0, 350)")
+        self.page.evaluate("window.scrollBy(0, 370)")
+        time.sleep(0.5)
         self.click(self.dropdown_input)
+        time.sleep(0.5)
     # Wait for at least one visible dropdown option reliably
         options = self.page.locator('[role="option"]')
         expect(options.first).to_be_visible(timeout=10000)
 
     def select_dropdown_option_by_text(self, option_text: str):
+        time.sleep(0.5)
         self.click(self.dropdown_input)
+        time.sleep(0.5)
         self.page.get_by_text(option_text, exact=True).click()
 
     def get_selected_option_text(self) -> str:
