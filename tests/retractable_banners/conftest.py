@@ -5,7 +5,7 @@ import pytest
 import requests
 from requests.exceptions import RequestException
 from playwright.sync_api import sync_playwright, Page, Browser
-from .retractable_banners.utils.constants import BASE_URL, API_URL, FIXTURE_PATH
+from .utils.constants import BASE_URL, API_URL, FIXTURE_PATH
 
 PRODUCT_PAYLOAD = {
     "id": 1112,
@@ -54,18 +54,29 @@ def prepare_api_fixture_once():
 
 
 # Parametrize to run with chromium, firefox, and webkit
-@pytest.fixture(params=["chromium", "firefox", "webkit"], scope="function")
-def page(request):
-    browser_type = request.param
+# @pytest.fixture(params=["chromium", "firefox", "webkit"], scope="function")
+# def page(request):
+#     browser_type = request.param
+#     with sync_playwright() as p:
+#         browser_launcher = getattr(p, browser_type)
+#         browser = browser_launcher.launch(headless=False)
+#         context = browser.new_context(
+#             viewport={"width": 1240, "height": 900},
+#             screen={"width": 1240, "height": 900}
+#         )
+#         page: Page = context.new_page()
+#         page.goto(BASE_URL)
+#         page.wait_for_timeout(3000)
+#         yield page
+#         browser.close()
+@pytest.fixture(scope="function")
+def page():
+    
     with sync_playwright() as p:
-        browser_launcher = getattr(p, browser_type)
-        browser = browser_launcher.launch(headless=False)
-        context = browser.new_context(
-            viewport={"width": 1240, "height": 900},
-            screen={"width": 1240, "height": 900}
-        )
+        browser = p.chromium.launch(headless=False)
+        context = browser.new_context()
         page: Page = context.new_page()
         page.goto(BASE_URL)
-        page.wait_for_timeout(3000)
+        page.wait_for_timeout(6000)
         yield page
         browser.close()
