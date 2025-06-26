@@ -77,6 +77,6 @@ def page():
         context = browser.new_context()
         page: Page = context.new_page()
         page.goto(BASE_URL)
-        page.wait_for_timeout(6000)
+        page.wait_for_timeout(3000)
         yield page
         browser.close()
