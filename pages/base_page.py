@@ -37,3 +37,7 @@ class BasePage:
     # Assert that the element is visible using Playwright's expect
     def element_displayed(self, element: Locator, timeout: int = 10000):
         expect(element).to_be_visible(timeout=timeout)
+
+    def clear(self, locator: Locator, timeout: int = 10000):
+        locator.wait_for(state="visible", timeout=timeout)
+        locator.fill("")

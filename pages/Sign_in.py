@@ -1,6 +1,8 @@
 from playwright.sync_api import Page
 from pages.base_page import BasePage , Locator
 from config import valid_email_with_adminPermission , valid_password_for_account_adminPermission
+from tests.Sign_In.utils.credentials import invalid_passwords
+import time
 
 class SignIn(BasePage):
     def __init__(self, page: Page):
@@ -33,11 +35,32 @@ class SignIn(BasePage):
     def field_is_required_error_message_for_username_password(self):
         locators = self.error_messages_field_is_required
         count = locators.count()
-        assert count == 2
         messages = []
         for i in range(count):
             messages.append(self.get_text(locators.nth(i)))
-        return messages
+        return messages , count
     
     def fill_email_field_with_valid_value(self):
         self.fill(self.email_field , value=valid_email_with_adminPermission)
+
+    def fill_passowrd_field_with_valid_value(self):
+        self.fill(self.password_field , valid_password_for_account_adminPermission)
+    
+    def clear_email_field(self):
+        self.clear(self.email_field)
+    
+    def clear_password_field(self):
+        self.clear(self.password_field)
+        
+    def clear_and_fill(self, locator: Locator, value: str, timeout: int = 10000):
+        locator.wait_for(state="visible", timeout=timeout)
+        locator.fill("")
+        locator.fill(value)
+
+    def test_multiple_invalid_passwords(self):
+        locator = self.error_messages_field_is_required
+        for case in invalid_passwords:
+            self.clear_and_fill(self.password_field, case["value"])
+            self.click(self.log_in_button)
+            error_text = self.get_text(locator)
+            assert error_text == case['expected_error']
