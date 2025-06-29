@@ -28,12 +28,12 @@ pip --version
 
 # STEP 2: Create & Activate Virtual Environment
 ```bash 
- python -m venv venv
+python -m venv venv
 ```
 
 # For macOS / Linux:
 ```bash 
-source venv/bin/activate 
+source venv/bin/activate
 ```
 
 # For Windows:
@@ -62,7 +62,7 @@ brew install allure
 chmod +x run_tests.sh
 ```
 
-```bash 
+```bash
 ./run_tests.sh
 ```
 
@@ -72,7 +72,7 @@ chmod +x run_tests.sh
  - allure open allure-report
 
 
- # Project Structure
+# Project Structure
 
 ├── tests/
 │   └── retractable_banners/

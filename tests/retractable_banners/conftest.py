@@ -73,7 +73,7 @@ def prepare_api_fixture_once():
 def page():
     
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.firefox.launch(headless=False)
         context = browser.new_context()
         page: Page = context.new_page()
         page.goto(BASE_URL)
