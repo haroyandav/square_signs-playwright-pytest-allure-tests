@@ -1,13 +1,15 @@
 from playwright.sync_api import Page
 from pages.base_page import BasePage , Locator
 from config import valid_email_with_adminPermission , valid_password_for_account_adminPermission
-from tests.Sign_In.utils.credentials import invalid_passwords
+from tests.Sign_In.utils.credentials import invalid_passwords , invalid_emails , valid_emails
 import time
+from pages.design_tool import DesignTool
 
 class SignIn(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
         self.page = page
+        self.design_tool = DesignTool(page)
 
         # My account
         self.my_account = page.locator('[class="userDropDown  "]')
@@ -19,6 +21,7 @@ class SignIn(BasePage):
         self.password_field = page.locator('[data-testid="input-sign-in-email"][name="password"]')
         self.log_in_button = page.locator('button[type="submit"]').nth(1)
         self.error_messages_field_is_required = page.locator('[data-testid="error-undefined"]')
+        self.x_button = page.locator('[class="popupClose"]')
     
     def hover_over_my_account(self):
         self.hover(self.my_account)
@@ -57,10 +60,29 @@ class SignIn(BasePage):
         locator.fill("")
         locator.fill(value)
 
-    def test_multiple_invalid_passwords(self):
+    def multiple_invalid_passwords(self):
         locator = self.error_messages_field_is_required
         for case in invalid_passwords:
             self.clear_and_fill(self.password_field, case["value"])
             self.click(self.log_in_button)
             error_text = self.get_text(locator)
             assert error_text == case['expected_error']
+
+    def multiple_invalid_emails(self):
+        locator = self.error_messages_field_is_required
+        for case in invalid_emails:
+            self.clear_and_fill(self.email_field , case['value'])
+            self.click(self.log_in_button)
+            error_text = self.get_text(locator.nth(0))
+            assert error_text == case['expected_error']
+    
+    def multiple_valid_emails(self):
+        locator = self.error_messages_field_is_required
+        for case in valid_emails:
+            self.clear_and_fill(self.email_field , case['value'])
+            self.click(self.log_in_button)
+            count = locator.count()
+            assert count == 1
+    
+    def close_sign_in_modal(self):
+        self.click(self.x_button)
