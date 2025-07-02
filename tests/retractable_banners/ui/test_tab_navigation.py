@@ -3,7 +3,7 @@
 import json
 import pytest
 from pathlib import Path
-from playwright.sync_api import expect
+from playwright.sync_api import Page
 
 # Load tab and heading test data from JSON fixture
 def load_tab_data():
@@ -12,7 +12,7 @@ def load_tab_data():
         return json.load(f)
 
 @pytest.mark.parametrize("data", load_tab_data())
-def test_tab_navigation_displays_correct_heading(page, data):
+def test_tab_navigation_displays_correct_heading(page: Page, data):
     tab_label = data["tab"]
     expected_heading = data["heading"]
 
@@ -21,4 +21,4 @@ def test_tab_navigation_displays_correct_heading(page, data):
 
     # Step 2: Verify that the expected heading is visible after clicking the tab
     heading = page.get_by_role("heading", name=expected_heading, exact=True)
-    expect(heading).to_be_visible(timeout=5000)
+    assert heading.is_visible()

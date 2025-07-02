@@ -22,6 +22,9 @@ class SignIn(BasePage):
         self.log_in_button = page.locator('button[type="submit"]').nth(1)
         self.error_messages_field_is_required = page.locator('[data-testid="error-undefined"]')
         self.x_button = page.locator('[class="popupClose"]')
+
+        # My account after Login
+        self.user_name_desktop = page.locator('[class="titleBox user"] [class="desktop"]')
     
     def hover_over_my_account(self):
         self.hover(self.my_account)
@@ -86,3 +89,6 @@ class SignIn(BasePage):
     
     def close_sign_in_modal(self):
         self.click(self.x_button)
+
+    def get_user_name_after_login(self):
+        return self.get_text(self.user_name_desktop)
