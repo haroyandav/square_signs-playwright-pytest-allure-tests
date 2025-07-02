@@ -4,6 +4,7 @@ import time
 import pytest
 from playwright.sync_api import sync_playwright, Page, Browser
 from ..Sign_In.utils.constants import BASE_URL
+from tests.Sign_In.utils.api import valid_sign_in
 
 @pytest.fixture(scope="function")
 def page():
@@ -15,3 +16,8 @@ def page():
         page.wait_for_timeout(1000)
         yield page
         browser.close()
+
+@pytest.fixture(scope="session", autouse=True)
+def prepare_sign_in():
+    sign_in_response = valid_sign_in()
+    yield sign_in_response

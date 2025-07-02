@@ -27,7 +27,7 @@ def test_rollup_matches_selected_size(page):
     # Step 6: Wait for and confirm the warning modal
     banner.element_displayed(banner.warning_modal_heading, 4000)
     banner.confirm_notice_modal()
-    page.wait_for_timeout(1000)  
+    page.wait_for_timeout(1000)
     # Step 7: Get the updated size and roll-up text
     updated_size_digits = ''.join(filter(str.isdigit, banner.get_size_field_text()))
     updated_rollup_digits = ''.join(filter(str.isdigit, banner.get_roll_up_stand_button_text()))
