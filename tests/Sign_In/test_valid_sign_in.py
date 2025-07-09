@@ -2,6 +2,7 @@ import time
 import pytest
 from pages.Sign_in import SignIn
 from tests.Sign_In.utils.messages import error_message_for_username_password_when_missing
+# from tests.Sign_In.utils.api import get_user_addresses
 
 @pytest.mark.smoke
 @pytest.mark.regression

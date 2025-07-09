@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 from pages.base_page import BasePage , Locator
-from config import valid_email_with_adminPermission , valid_password_for_account_adminPermission
+from config import valid_email_with_adminPermission , valid_password_for_account_adminPermission , valid_email_for_google_sign_in , valid_password_for_google_sign_in
 from tests.Sign_In.utils.credentials import invalid_passwords , invalid_emails , valid_emails
 import time
 from pages.design_tool import DesignTool
@@ -25,6 +25,12 @@ class SignIn(BasePage):
 
         # My account after Login
         self.user_name_desktop = page.locator('[class="titleBox user"] [class="desktop"]')
+
+        # Sign in Google and Fb
+        self.sign_in_continue_with_google = page.locator("[class='content popup-content'] button[type='button']").nth(1)
+        self.sign_in_continue_with_facebook = page.locator("[class='content popup-content'] button[type='button']").nth(0)
+        # self.email_field_google = page.locator('input[id="identifierId"]')
+
     
     def hover_over_my_account(self):
         self.hover(self.my_account)
@@ -48,6 +54,7 @@ class SignIn(BasePage):
     
     def fill_email_field_with_valid_value(self):
         self.fill(self.email_field , value=valid_email_with_adminPermission)
+        print('EMAIL' , valid_email_with_adminPermission)
 
     def fill_passowrd_field_with_valid_value(self):
         self.fill(self.password_field , valid_password_for_account_adminPermission)
@@ -92,3 +99,16 @@ class SignIn(BasePage):
 
     def get_user_name_after_login(self):
         return self.get_text(self.user_name_desktop)
+    
+    def sign_in_with_google(self):
+        self.click(self.sign_in_continue_with_google)
+        with self.page.expect_popup() as popup_info:
+            self.click(self.sign_in_continue_with_google)
+
+        popup = popup_info.value
+        email_input = popup.locator('input#identifierId')
+        self.fill(email_input, valid_email_for_google_sign_in)
+        popup.get_by_text("Next").click()
+    
+    def sign_in_with_facebook(self):
+        self.click(self.sign_in_continue_with_facebook)
