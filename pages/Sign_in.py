@@ -31,7 +31,6 @@ class SignIn(BasePage):
         self.sign_in_continue_with_facebook = page.locator("[class='content popup-content'] button[type='button']").nth(0)
         # self.email_field_google = page.locator('input[id="identifierId"]')
 
-    
     def hover_over_my_account(self):
         self.hover(self.my_account)
     
@@ -112,3 +111,10 @@ class SignIn(BasePage):
     
     def sign_in_with_facebook(self):
         self.click(self.sign_in_continue_with_facebook)
+    
+    def valid_sign_in(self):
+        self.hover_over_my_account()
+        self.open_sign_in_modal()
+        self.fill_email_field_with_valid_value()
+        self.fill_passowrd_field_with_valid_value()
+        self.click_on_the_sign_in_button()
