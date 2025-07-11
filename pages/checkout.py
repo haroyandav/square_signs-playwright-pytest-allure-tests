@@ -34,6 +34,7 @@ class Checkout(BasePage):
         self.fill(self.company_name , 'Company')
         self.fill(self.phone_number , '312) 642-1160')
         self.fill(self.address_line_1 , '1680')
+        self.page.wait_for_timeout(200)
         self.click(self.page.get_by_text('Intercontinental Park'))
         self.page.wait_for_timeout(200)
         self.click(self.save_address_book_checkbox)
