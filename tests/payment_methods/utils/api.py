@@ -7,3 +7,6 @@ def get_cart_quantity():
     headers = get_header_cookie_for_valid_sign_in()
     response = requests.get(url=endpoint , headers=headers)
     return response
+
+# def get_user_addresses():
+    
