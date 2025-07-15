@@ -14,11 +14,11 @@ invalid_emails =[
 ]
 
 valid_emails =[
-    {"value": "q.e@squaresigns.com", "expected_error": "Wrong Email Address"},
-    {"value": "qe@squaresigns.com", "expected_error": "Wrong Email Address"},
-    {"value": "qe+randomstuff@squaresigns.com", "expected_error": "Wrong Email Address"},
-    {"value": "qe.test.2.3.4.5@squaresigns.com", "expected_error": "Wrong Email Address"},
-    {"value": "qe-@squaresigns.com", "expected_error": "Wrong Email Address"},
-    {"value": "test@qa.devserver.com", "expected_error": "Wrong Email Address"},
+    {"value": "q.e@squaresigns.com"},
+    {"value": "qe@squaresigns.com"},
+    {"value": "qe+randomstuff@squaresigns.com"},
+    {"value": "qe.test.2.3.4.5@squaresigns.com"},
+    {"value": "qe-@squaresigns.com"},
+    {"value": "test@qa.devserver.com"},
     {"value": "qe!#$%^&*-_={}`~{}|/?'a@squaresigns.com"}
 ]
